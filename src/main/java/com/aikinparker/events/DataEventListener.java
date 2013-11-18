@@ -3,6 +3,7 @@ package com.aikinparker.events;
 public abstract class DataEventListener<T> implements Event.Listener{
 
 	public void eventReceived(Event event) {
+		//TODO Do some type checking validation.
 		coerceEventReceived((DataEvent<?>) event);
 	}
 	

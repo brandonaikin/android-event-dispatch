@@ -15,6 +15,7 @@ public class DataEvent<T> extends Event {
 	}
 	
 	public DataEventListener<T> createListener(Class<? extends DataEventListener<T>> listenerClass) {
+		//TODO Do something useful with any trapped exceptions.
 		try {
 			return listenerClass.newInstance();
 		} catch (InstantiationException e) {
